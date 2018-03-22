@@ -24,10 +24,6 @@ int main (void)
             printf("#");
         }
 
-        for (int space = height - 1; space > 0; space--)
-        {
-            printf(" ");
-        }
 
         for (int hash = 0; hash < row + 1; hash++)
         {
