@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <cs50.h>
 
+void print_char (char* c, int n);
+
 int main (void)
 {
     int height;
@@ -13,23 +15,24 @@ int main (void)
 
     for (int row = 0; row < height; row++)
     {
-        for (int space = height - 1; space > row; space--)
-        {
-            printf(" ");
-        }
+        print_char(" ", height-1-row);
 
+        print_char("#", 2*(row+1));
 
-        for (int hash = 0; hash < row + 1; hash++)
-        {
-            printf("#");
-        }
-
-
-        for (int hash = 0; hash < row + 1; hash++)
-        {
-            printf("#");
-        }
+        // ou print_char("#", row+1) deux fois de suite
 
         printf("\n");
+    }
+
+
+}
+
+// print char n times
+void print_char (char* c, int n)
+{
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%s", c);
     }
 }
