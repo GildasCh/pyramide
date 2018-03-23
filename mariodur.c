@@ -17,7 +17,7 @@ int main (void)
     {
         print_char(" ", height-1-row);
 
-        print_char("##", row+1);
+        print_char("@@", row+1);
 
         printf("\n");
     }
