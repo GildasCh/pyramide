@@ -19,18 +19,13 @@ int main (void)
 
         print_char("#", 2*(row+1));
 
-        // ou print_char("#", row+1) deux fois de suite
-
         printf("\n");
     }
-
-
 }
 
 // print char n times
 void print_char (char* c, int n)
 {
-
     for (int i = 0; i < n; i++)
     {
         printf("%s", c);
